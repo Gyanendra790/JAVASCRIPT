@@ -4,12 +4,17 @@ console.log(2<=1) //false
 console.log(2==1) //false
 console.log(2!=1) //true
 
-console.log("2">1) //true -> 2 is converted into number
+console.log("2">1) //true -> string is converted into number here
 
 console.log(null>0) //false
 console.log(null==0) //false
 console.log(null>=0) //true
-//comparisons convert null into number i.e. 0 and == works differently
+/*comparisons convert null into number i.e. 0 
+and == works differently.
+The reason is that an equality check == and comparisons ><>=<= work differently
+Comparisons convert null to a number,treating it as 0.
+
+*/
 
 console.log(undefined==0) //false
 console.log(undefined>0)  //false
