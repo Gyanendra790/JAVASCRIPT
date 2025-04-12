@@ -1,4 +1,4 @@
-//Below two lines are same, both will print {}
+//Below two lines are same, both will print {}->empty object
 //const tinderUser = new Object() //singleton object
 const tinderUser={} //non-singleton object
 tinderUser.id="123abc"
@@ -73,13 +73,19 @@ console.log(obj5)//->{
  console.log(tinderUser.hasOwnProperty('loggedOut'))//->false
 
 
+
+//DESTRUCTURING OF OBJECT
+
  const course={
     courseName:"MCA",
     courseInstructor:"Gyanendra",
     courseDuration:"2"
  }
  //new way to access elements of object->destructuring of object
- const {courseInstructor: instructor}=course
+ const {courseInstructor}=course
+ console.log(courseInstructor)
+ //if you want to access courseInstructor with another name
+ const {courseInstructor:instructor}=course
  console.log(instructor)//->Gyanendra
 
  //below code is in json format not a object, therefore keys and values are quoted

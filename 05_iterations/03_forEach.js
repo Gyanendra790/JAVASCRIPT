@@ -46,3 +46,9 @@ myCoding.forEach( (item)=>{
                                  //java
                                  // python
 })
+
+//forEach loop does not return any value.It print undefined
+//Example:const values=coding.forEach( (item) => {
+ //   return item
+//})
+//console.log(values)=>undefined

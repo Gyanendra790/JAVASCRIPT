@@ -25,4 +25,4 @@ myObj.greeting=function()
     console.log("Hi, hello everyone")
 }
 console.log(myObj.greeting)// -> it gives Hi, hello everyone as output
-console.log(myObj.greeting())// -> it givesundefined as output
+console.log(myObj.greeting())// -> it gives undefined as output

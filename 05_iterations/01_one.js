@@ -6,11 +6,11 @@
 //for of
 const arr=[1,2,3,4,5]
 for (const num of arr) {
-   // console.log(num)
+    console.log(num)
 }
 const greetings = "Hello World"
 for (const greet of greetings) {
-    //console.log(`Each character is ${greet}`)
+    console.log(`Each character is ${greet}`)//->it will print all characters of greetings
     
 }
 
@@ -43,7 +43,7 @@ map.set('FR',"France")
     game3:"badminton"
  }
  for (const value of myObject) {
-    console.log(value)//->myObject is not iterable
+    console.log(value)//->myObject is not iterable error comes
  }
 
 

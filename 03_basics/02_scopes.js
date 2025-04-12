@@ -1,11 +1,12 @@
 var c=300
+let a=400
 if(true)
 {
-    let a=10
+    let a=10//value of a become 10 in this block scope not outside this scope
     const b=20
-    var c=30
+    var c=30//Now value of c become 30 either we use locally or globally.
 }
-//console.log(a)//a is not defined
+//console.log(a)//400
 //console.log(b)// b is not defined
 console.log(c)//30->the value which is defined globally is affected by local value in var
               //but in case of let and const it will only affect locally not globally

@@ -7,24 +7,15 @@ console.log(`${this.username}, welcome to website`);
 console.log(this)
     }
 }
-// user.welcomeMessage()//->Gyanendra, welcome to website
-                             //{
-                             //username: 'Gyanendra',
-                             //price: 999,
-                             //welcomeMessage: [Function: welcomeMessage]
-                             //}
-// user.username="Sam"
-// user.welcomeMessage()//->Sam, welcome to website
-                       //  {
-                       //   username: 'Sam',
-                       //   price: 999,
-                       //   welcomeMessage: [Function: welcomeMessage]
-                       //}
 
+user.welcomeMessage()//->Gyanendra, welcome to website
+user.username="Sam"
+user.welcomeMessage()//->Sam, welcome to website
+          
  //console.log(this)// gives {} as output in node but in browser it gives window as output
 
 
- //ARROW FXN
+//ARROW FXN
    //first way"explicit return
 //  const addTwo = (num1,num2) => {
 //     return num1+num2

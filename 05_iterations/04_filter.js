@@ -1,3 +1,6 @@
+//filter also takes callback fxn as parameters and fxn consists condition for return
+
+
 const myNums=[1,2,3,4,5,6,7,8,9,10]
 //implicit method(without return method)
 //let newNums=myNums.filter( (num) => num > 4 )

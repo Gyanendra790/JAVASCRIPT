@@ -1,3 +1,4 @@
+//for traversing object use for in loop
 const myObject={
     js:"javascript",
     cpp:"C++",

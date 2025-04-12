@@ -16,21 +16,21 @@
 </body>
 <script>
     const parent=document.querySelector('.parent')
-    // console.log(parent)
-    // console.log(parent.children)
-    // console.log(parent.children[0])
-    // console.log(parent.children[3].innerHTML)
-    // for (let index = 0; index < parent.children.length; index++) {
-    //     console.log(parent.children[index].innerHTML);    
-    // }
-    // parent.children[1].style.color="red";
-    // parent.firstElementChild.innerHTML="Sunday"
-    // console.log(parent.firstElementChild.innerHTML)
+    console.log(parent)
+    console.log(parent.children)
+    console.log(parent.children[0])
+    console.log(parent.children[3].innerHTML)
+    for (let index = 0; index < parent.children.length; index++) {
+        console.log(parent.children[index].innerHTML);    
+    }
+    parent.children[1].style.color="red";
+    parent.firstElementChild.innerHTML="Sunday"
+    console.log(parent.firstElementChild.innerHTML)
 
-//    const day1= document.querySelector('.day')
-//    console.log(day1)
-//    console.log(day1.parentElement)
-//    console.log(day1.nextElementSibling)
+   const day1= document.querySelector('.day')
+   console.log(day1)
+   console.log(day1.parentElement)
+   console.log(day1.nextElementSibling)
 
    console.log("NODES: ",parent.childNodes);
 </script>

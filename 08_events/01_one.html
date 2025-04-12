@@ -3,21 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML EVENTS</title>
+    <title>htnml Events </title>
 </head>
-<body>
-    
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
 </body>
 <script>
-     async function getRestaurants(){
-       // add CORS chrome extension
-        const info=await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=26.87560&lng=80.91150&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
-        const json=await info.json();
-        console.log(json);
-        console.log("Hi");
-       //setAllRestaurants(json?.info?.cards[2]?.info?.info?.cards);
-       // setFilteredRestaurants(json?.info?.cards[2]?.info?.info?.cards);
-
+    //onclick event(not a modern approach)
+    document.getElementById('owl').onclick = function(){
+        alert("owl clicked")
     }
+    
+    //using addEventListener (modern approach)-3 parameters
+    document.getElementById('owl').addEventListener('click', function(){
+    alert("owl clicked")
+    }, false)//by default 3rd parameter is false which is event propagation
+             //if you don't write false here then by default it is false
+
+   
+    //traditional approach to perform above action
+    // attachEvent()->Used for Internet Explorer
+    // jQuery - on event
+
+    //using event object-> e(it will contain all events-print e to see)
+    document.getElementById('owl').addEventListener('click', function(e){
+    console.log("owl clicked");
+    }, false)//Event propagation has two context->event bubbling and event capturing
+             //by default we use event bubbling i.e. false
+
+
+   //some common used events 
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+
+    document.getElementById('images').addEventListener('click', function(e){
+        console.log("clicked inside the ul");
+    }, false)//when we click any images ,it will print clicked inside ul
+
+
+    // document.getElementById('owl').addEventListener('click', function(e){
+    // console.log("owl clicked");
+    // }, false)//when we click specifically on owl image then it will print
+             //"owl clicked" first then it will print "clicked inside ul"
+             //Above event propagation is known as event bubbling(i.e false)
+             //Event bubbling means from inside(bottom) to outside(top)
+             //If we put value of event propagation(3rd parameter false)
+             //then it is called event capturing which means from outside(top) to inside(bottom)
+             //in event capturing->"clicked inside ul" first then it will print "owl clicked"
+
+    //to stop event propagation ->e.stopPropagation();        
+    document.getElementById('owl').addEventListener('click', function(e){
+    console.log("owl clicked");
+    e.stopPropagation();//->Now it will not goes to its parent event i.e. event bubbling
+    }, false)
+
+
+    document.getElementById('google').addEventListener('click',function(e){
+        e.preventDefault();//to stop default behaviour
+                           //Now if we click on Google it will not goes to google website
+                           //If we don't use this then it will take you on google website after clicking
+        e.stopPropagation()
+        console.log("google clicked");
+    }, false)
+   
+    //Now i want on clicking image it will disappear
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+        //Here we use condition otherwise if we print on any li item all images disaapear
+        //because parent of li is ul , that's why all ul things disappear
+        if (e.target.tagName === 'IMG') {
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode
+            //removeIt.remove()
+            //or use below line for above line's alternative
+            removeIt.parentNode.removeChild(removeIt)
+        }
+     })
+    
 </script>
 </html>

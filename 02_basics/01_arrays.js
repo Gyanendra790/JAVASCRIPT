@@ -1,3 +1,9 @@
+/* 
+-Array should be resizable in javascript.
+-It may store combination of elements of different  datatypes.
+*/
+
+
 let myArr=[1,2,3,4,5]
 console.log(myArr)//-> it gives [ 1, 2, 3, 4, 5 ] output
 
@@ -11,17 +17,17 @@ console.log(newArr)//[ 1, 2, 3, 4, 5 ]
 newArr.pop()//it with pop last element of array
 console.log(newArr)//->[ 1, 2, 3, 4 ]
 
-newArr.unshift(0)//->it will add 0 at first index
+newArr.unshift(0)//->it will add 0 at first index(time consuming operation for large sized array)
 console.log(newArr)//->[ 0, 1, 2, 3, 4 ]
 
-newArr.shift()//->it will remove first element of array
+newArr.shift()//->it will remove first element of array(time consuming operation for large sized array)
 console.log(newArr)//[ 1, 2, 3, 4 ]
 
 console.log(newArr.includes(5))//false -> it checks whether array contains 5 or not
 console.log(newArr.indexOf(1))//-1 ->it gives index of given element,if element is not present it returns -1
 
-console.log(newArr.join())// 1,2,3,4 ->it converts array into string(if it is array then the output will be [1,2,3,4])
-
+console.log(newArr.join())// 1,2,3,4 ->it converts array into string separated by operator(if it is array then the output will be [1,2,3,4])
+console.log(typeof newArr)//string
 /*slice:-it will works like substring i.e. it gives element from first given position to second given position-1
          and it will not affect the original array*/
 let myArr1=[1,2,3,4,5]

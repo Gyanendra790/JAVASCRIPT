@@ -9,7 +9,8 @@ function sayMyName(){
     console.log("R")
     console.log("A")
 }
-sayMyName()
+sayMyName//<-This is reference
+sayMyName()//<-This is execution
 
 //function for adding two numbers
 // function addTwoNumbers(number1,number2)//at the time of definition parameters is passed
@@ -40,7 +41,7 @@ const message=loginUserMessage("Gyanendra")
 console.log(message)//Gyanendra just logged in..
 
 //if more than one value is passed at the time of calling a function
-//then be use rest operator(spread operator before parameters)->...
+//then we use rest operator(spread operator before parameters)->...
 function calculateCarPrice(...num1){
     return num1
 }

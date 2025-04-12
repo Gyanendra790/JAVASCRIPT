@@ -18,7 +18,9 @@ let arr=[1,2,3,[4,5,6],[7,8,[9,10]]]
 let newArr=arr.flat(Infinity)//-> [1,2,3,4,5,6,7,8,9,10] ->it will convert all arrays into single array using depth
 console.log(newArr)
 
-console.log(Array.from("Gyanendra")) // -> it will convert into array of characters
+console.log(Array.isArray("Gyanendra"))//->false
+console.log(Array.from("Gyanendra")) // -> it will convert into array of characters ['G','y','a','n','e','n','d','r','a']
+console.log(Array.from({name:"Gyanendra"}))//->[] it will return empty array because it doesn't understand between array of key or array of value
 
 let score1=300
 let score2=200
