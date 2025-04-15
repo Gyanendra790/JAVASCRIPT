@@ -1,3 +1,5 @@
+//COMPARISON OF DATATYPES-> return values
+
 console.log(2>1) //true
 console.log(2>=1) //true
 console.log(2<=1) //false
@@ -11,7 +13,7 @@ console.log(null==0) //false
 console.log(null>=0) //true
 /*comparisons convert null into number i.e. 0 
 and == works differently.
-The reason is that an equality check == and comparisons ><>=<= work differently
+The reason is that an equality check == and comparisons ><>=<= work differently in JavaScript
 Comparisons convert null to a number,treating it as 0.
 
 */

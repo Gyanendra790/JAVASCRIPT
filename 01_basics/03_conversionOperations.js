@@ -38,7 +38,7 @@ console.log(Boolean(-0.78))//true
 //************************* OPERATIONS ********************************** */
  let value=3
  let negValue=-value
- console.log(negValue);
+ console.log(negValue);//output -> -3
 
  console.log(2+4)//output->6
  console.log(2-4)//output->-2
@@ -56,6 +56,7 @@ console.log(Boolean(-0.78))//true
  console.log("1"+2+2)//output->122
  console.log(1+2+"2")//output->32(when string comes whole become string but first it treat as numbers)
  console.log(1+2+"3"+"4"+5+5)//output->33455
+ console.log(true)//output ->true
  console.log(+true)//output->1
  //console.log(true+)//invalid syntax
  console.log(+"")//output->0
@@ -67,5 +68,9 @@ console.log(Boolean(-0.78))//true
 
  let gameCounter=100
  gameCounter++//read from mdn
+ console.log(gameCounter)//output->101
  ++gameCounter//read from mdn
+ console.log(gameCounter)//output ->101
+
+ //Prefix and Postfix MDN
 

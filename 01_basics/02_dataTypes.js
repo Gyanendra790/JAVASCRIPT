@@ -12,6 +12,17 @@ let id=212                   //number
 let name="Gyanendra"         //string
 let isLoggedIn=false         //boolean
 
+
+//number => 2 to power 53
+//bigint
+//string => ""
+//boolean => true/false
+//null =>standalone value
+//undefined =>
+//symbol => unique
+
+//object
+
 console.log(typeof "Gyanendra") //output->string
 console.log(typeof undefined)   //output->undefined
 console.log(typeof null)        //output->object
@@ -23,3 +34,5 @@ console.log(typeof true)        //output->boolean
 undefined means value is not assigned;
 null is a standalone value;
 */
+
+//Always recommend tc39 and mdn documentation

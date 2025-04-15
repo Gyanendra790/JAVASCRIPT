@@ -2,6 +2,9 @@
  * let,const aur var KI KAHANI
  */
 
+//Read about lowercase,UPPERCASE,UPPER_SNAKE_CASE,kebab-case/list-case/spinal-case
+// PascalCase(UpperCamelCase),snake_case,camelCase
+
 //always use camelCase for variable declaration
 const accountId=790
 var accountName="Personal"

@@ -20,7 +20,7 @@ console.log(otherName.toLowerCase())
 console.log(otherName.toUpperCase())
 console.log(otherName.indexOf('a'))//gives first index
 console.log(otherName.lastIndexOf('a'))//gives last index
-console.log(otherName.substring(1,4))//output->yan (from starting index to last index-1),if you give -ve index ,then substring consider -ve value as 0
+console.log(otherName.substring(1,4))//output->yan (from starting index to last index-1),if you give -ve index ,then substring consider -ve value as 0 and starts with 0
 console.log(otherName.slice(1,4))//output->yan (it is same as substring but it also takes -ve index to take reverse of string)
 console.log(otherName.replace('G','g'))//output->gyanendra
 
