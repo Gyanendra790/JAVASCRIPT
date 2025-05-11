@@ -42,6 +42,7 @@ console.log(message)//Gyanendra just logged in..
 
 //if more than one value is passed at the time of calling a function
 //then we use rest operator(spread operator before parameters)->...
+//On the basis of usecases it is defined either it is spread or rest operator
 function calculateCarPrice(...num1){
     return num1
 }

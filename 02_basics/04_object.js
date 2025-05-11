@@ -1,6 +1,6 @@
 //Below two lines are same, both will print {}->empty object
-//const tinderUser = new Object() //singleton object
-const tinderUser={} //non-singleton object
+//const tinderUser = new Object() //singleton object(uning constructor)
+const tinderUser={} //non-singleton object(using object)
 tinderUser.id="123abc"
 tinderUser.name="Gyanendra"
 tinderUser.loggedIn=false
@@ -92,7 +92,7 @@ console.log(obj5)//->{
 //  {
 //     "name" : "Gyanendra",
 //     "courseName" : "JavaScript",
-//    "price" : "free"
+//     "price" : "free"
 //  }
 
 //data from api comes in json format

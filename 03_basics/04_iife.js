@@ -1,10 +1,17 @@
-//Immediately Invoked Function Expression (IIFE)
+//Immediately Invoked Function Expression (IIFE)-After definition immediate execution
 
+function chai(){
+  console.log(`DB IS CONNECTED..`)
+}
+chai()//->gives DB IS CONNECTED.. as output
+
+
+//Above code's IIFE version
   //named IIFE
 (function chai(){
     console.log(`DB IS CONNECTED..`)
 })();//-> gives DB IS CONNECTED.. as output,semicolon is mandatory here if we want to execute another iife
-          //otherwise it gives error
+          //otherwise it gives error because we have to tell explicitly where to stop iife context.
 //first () shows function definition
 //second () shows  execution
 

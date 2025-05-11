@@ -1,6 +1,9 @@
 /* 
 -Array should be resizable in javascript.
 -It may store combination of elements of different  datatypes.
+-In Javascript,when we do copy operations on array it will create shallow copies(shares the same references).
+-SHALLOW COPY:-When you change either the source or the copy,changes is reflected in both.
+-DEEP COPY:-Changes reflected only in the changed ones.
 */
 
 

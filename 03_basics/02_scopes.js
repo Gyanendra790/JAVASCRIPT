@@ -2,9 +2,9 @@ var c=300
 let a=400
 if(true)
 {
-    let a=10//value of a become 10 in this block scope not outside this scope
+    let a=10//value of 'a' become 10 in this block scope not outside this scope
     const b=20
-    var c=30//Now value of c become 30 either we use locally or globally.
+    var c=30//Now value of 'c' become 30 either we use locally or globally.
 }
 //console.log(a)//400
 //console.log(b)// b is not defined
