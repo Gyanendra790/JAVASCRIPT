@@ -1,12 +1,12 @@
-//for each loop
+//for each loop :-built in property
 const coding=["js","ruby","java","python"]
 //callback fxn is passed inside for each loop
 //callback fxn is an anonymous fxn
-coding.forEach( function (item) {
+coding.forEach( function (item) { // item represents each value of coding array
   //console.log(item)//-> js
-                    // ruby
-                    // java
-                    // python
+                    //    ruby
+                    //    java
+                    //    python
 })
 
 //'or' using arrow fxn

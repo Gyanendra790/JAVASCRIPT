@@ -3,7 +3,7 @@
   //   {
   //     statement
   //   }
-//switch
+//switch :- In switch case if we don't apply break after each case then it will execute all case except default after the matching case
   //   switch(key)
   //   {
   //     case value:

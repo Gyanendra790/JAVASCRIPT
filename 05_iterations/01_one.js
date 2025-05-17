@@ -3,10 +3,13 @@
 //     const element = array[index];
 // }
 
+//ctrl + D = to find all duplicates
+
+//BELOW ARE ARRAY/STRING SPECIFIC LOOPS:-
 //for of
 const arr=[1,2,3,4,5]
 for (const num of arr) {
-    console.log(num)
+    console.log(num)//-> 1 2 3 4 5
 }
 const greetings = "Hello World"
 for (const greet of greetings) {
@@ -14,7 +17,7 @@ for (const greet of greetings) {
     
 }
 
-//maps:-stores unique value in the form of key-value pair
+//maps:-stores unique value in the form of key-value  by maintaining the order of insertion.
 const map=new Map()
 map.set('IN',"India")
 map.set('USA',"United States Of America")
@@ -28,13 +31,13 @@ map.set('FR',"France")
    // console.log(key)//->[ 'IN', 'India' ]
                        // [ 'USA', 'United States Of America' ]
                        // [ 'FR', 'France' ]
- //                   }
+ //                   } -> it prints individual key-value pair if we apply for of loop on map.
 
- for(const [key,value] of map)
+ for(const [key,value] of map) //here we destructure each entry to separate key and value.
  {
   //  console.log(key,':-',value)//->IN :- India
-                               // USA :- United States Of America
-                               //  FR :- France
+                                 //  USA :- United States Of America
+                                 //  FR :- France
  }
 
  const myObject={
@@ -43,7 +46,7 @@ map.set('FR',"France")
     game3:"badminton"
  }
  for (const value of myObject) {
-    console.log(value)//->myObject is not iterable error comes
+    console.log(value)//->myObject is not iterable error comes in case of for of loop
  }
 
 

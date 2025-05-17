@@ -1,4 +1,4 @@
-//for traversing object use for in loop
+//for traversing object, use for in loop
 const myObject={
     js:"javascript",
     cpp:"C++",
@@ -7,13 +7,13 @@ const myObject={
 }
 for (const k in myObject) {
     console.log(k)//->js(gives key)
-                  //cpp
-                  //rb
-                  // py
+                  //  cpp
+                  //  rb
+                  //  py
     console.log(myObject[k])//->javascript(gives value)
-                            //C++
-                            //ruby
-                            // python
+                            //  C++
+                            //  ruby
+                            //  python
 }
 
 //for in loop with array
@@ -27,4 +27,8 @@ for(const k in arr)
                          //Shyam
                          //Ram
 }
+
+//for in loop, in array gives index(keys)
+//for of loop, in array gives value
+
 //for in loop is not used in map because map is not iterable
